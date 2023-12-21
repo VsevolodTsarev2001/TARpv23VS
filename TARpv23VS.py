@@ -15,3 +15,10 @@ print("Muutuja vanus=",vanus,",tüüp on",type(vanus))
 print("Muutuja eesnimi=",eesnimi,",tüüp on",type(eesnimi))
 print("Muutuja pikkus=",pikkus,",tüüp on",type(pikkus))
 print("Muutuja kas_käib_koolis=",kas_käib_koolis,",tüüp on",type(kas_käib_koolis))
+#3
+from random import *
+kokku=randint(10,100)
+print("Kokku: ",kokku)
+mitu=int(input("mitu kommi tahad võtta?"))
+kokku-=mitu
+print("Nüüd laua peal on",kokku,"kommid")
