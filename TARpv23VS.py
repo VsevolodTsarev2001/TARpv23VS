@@ -17,8 +17,28 @@ print("Muutuja pikkus=",pikkus,",tüüp on",type(pikkus))
 print("Muutuja kas_käib_koolis=",kas_käib_koolis,",tüüp on",type(kas_käib_koolis))
 #3
 from random import *
+from tkinter import ROUND
 kokku=randint(10,100)
 print("Kokku: ",kokku)
 mitu=int(input("mitu kommi tahad võtta?"))
 kokku-=mitu
 print("Nüüd laua peal on",kokku,"kommid")
+#4
+ümbermõõt = float(input("Mitu tundi kulus sõiduks? "))
+diameeter = ümbermõõt / 3.14159
+print("Puu diameeter: ", diameeter)
+#6
+try:
+    aeg = float(input("Mitu tundi kulus sõiduks? ")) #aeg ei saa olla 0
+    teepikkus = float(input("Mitu kilomeetrit sõitsid? "))
+    kiirus = teepikkus/aeg
+    print("Sinu kiirus oli " + str(kiirus) + " km/h")
+except :
+    print("Viga andmetüübiga")
+#10
+from random import *
+P=randint(1,5)
+hind=12.90
+hind*=1.1 #hind koos jätatega
+osa=round(hind/P,2)
+print("Iga sõber maksab: ",osa)
